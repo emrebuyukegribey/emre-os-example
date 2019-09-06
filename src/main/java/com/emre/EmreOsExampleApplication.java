@@ -14,8 +14,13 @@ public class EmreOsExampleApplication {
 	}
 	
 	@RequestMapping("/")
+	public String home() {
+		return "home";
+	}
+	
+	@RequestMapping("/hello")
 	public String hello() {
-		return "hello";
+		return "hello !!!";
 	}
 
 }
